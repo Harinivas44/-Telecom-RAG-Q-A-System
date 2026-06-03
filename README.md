@@ -40,5 +40,8 @@ PDF Document
      ▼
      
 [6] LLM (Qwen3-32B)     →  Generates answer using ONLY retrieved context
+
+     │
      ▼
+     
 Final Answer
