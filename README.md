@@ -12,22 +12,27 @@ This project builds a document-grounded Q&A system over a private telecom refere
 PDF Document
      │
      ▼
+     
 [1] PDF Loader          →  Loads 9 pages using PyPDFLoader
      │
      ▼
+     
 [2] Text Splitter       →  Splits into 37 chunks (size=600, overlap=100)
      │
      ▼
+     
 [3] Embeddings          →  Encodes chunks via sentence-transformers/all-MiniLM-L6-v2
      │
      ▼
+     
 [4] Vector Store        →  Stores 37 vectors in ChromaDB (in-memory)
      │
      ▼
+     
 [5] Retriever           →  Fetches top-3 relevant chunks per query (k=3)
      │
      ▼
+     
 [6] LLM (Qwen3-32B)     →  Generates answer using ONLY retrieved context
-     │
      ▼
 Final Answer
